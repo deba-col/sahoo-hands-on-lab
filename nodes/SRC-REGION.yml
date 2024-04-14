@@ -1,0 +1,63 @@
+steps:
+  REGION-595ba543-fd46-48ef-b317-67a9ae7e9f03:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Region data as defined by TPC-H
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e7b946f3-be9d-4224-806f-bd6e6fd4c91d
+              stepCounter: 595ba543-fd46-48ef-b317-67a9ae7e9f03
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 67a8d539-1c6b-4f4a-aa85-591bdc5beb12
+              stepCounter: 595ba543-fd46-48ef-b317-67a9ae7e9f03
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8683b330-6be6-4d45-b5bf-a1af3fe63d16
+              stepCounter: 595ba543-fd46-48ef-b317-67a9ae7e9f03
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: 595ba543-fd46-48ef-b317-67a9ae7e9f03
